@@ -10,7 +10,7 @@ plt.style.use('bmh')
 
 def plot_beta_hist(a, b):
     plt.hist(beta(a, b, size=10000), histtype="stepfilled",
-             bins=25, alpha=0.8, normed=True)
+             bins=25, alpha=0.8, density=True)
     return
 
 plot_beta_hist(10, 10)
